@@ -1,5 +1,5 @@
 [Unit]
-Description=Telegram
+Description=Cinema
 After=syslog.target
 After=network.target
 
@@ -7,8 +7,8 @@ After=network.target
 Type=simple
 User=root
 Group=root
-WorkingDirectory=/kinoteatr
-ExecStart=/kinoteatr/env/bin/python /kinoteatr/app.py
+WorkingDirectory=/mybots/cinemabot
+ExecStart=/mybots/cinemabot/venv/bin/python3.11 /mybots/cinemabot/app.py
 RestartSec=10
 Restart=always
 
