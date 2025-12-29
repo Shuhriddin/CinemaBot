@@ -142,4 +142,3 @@ async def get_movie(call:types.CallbackQuery,callback_data:MovieCallBack,state:F
         await movie_rate(code=id)
     except:
         await call.message.answer(f'{html.bold("Kino topilmadi!")}')
-
