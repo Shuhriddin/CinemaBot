@@ -40,7 +40,7 @@ async def get_movies_by_search(message:types.Message,state:FSMContext):
                     text2 = ''
                     counter = 1
                     for i in results[page:next]:
-                        text2 += f"{counter}.{i['description']}" + '\n'
+                        text2 += f"{counter}.{i['description']}" + '\n\n'
                         counter += 1
                     text1 += '\n' + text2
                     await message.answer(text=text1, reply_markup=pagination_btn(data=results, page=page))
